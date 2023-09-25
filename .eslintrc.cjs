@@ -4,7 +4,13 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['plugin:@typescript-eslint/recommended', 'plugin:react/recommended', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'prettier'
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true
